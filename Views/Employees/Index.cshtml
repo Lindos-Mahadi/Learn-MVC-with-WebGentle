@@ -15,18 +15,102 @@
             <a href="/practice/Index">Practice Index</a>
         </div>
         <hr />
-        @helper OrderedList(string[] words)
-        {
-            <ol>
-                @foreach (string word in words)
-                {
-                    <li>@word</li>
-                }
-            </ol>
-        }
+        <h1>List of Standard HTML Helpers In ASP.NET MVC 5</h1>
+        @* @Html.TextBox()*@
+        @*@Html.Password*@
+        @*@Html.TextArea*@
+        @*@Html.CheckBox*@
+        @*@Html.RadioButton*@
+        @*@Html.DropDownList*@
+        @*@Html.ListBox*@
+        @*@Html.Hidden*@
+        @*@Html.Display*@
+        @*@Html.Editor*@
+        @*@Html.ActionLink*@
+        @*@Html.BeginForm*@
+        @*@Html.Label*@
         <div>
-            @OrderedList(new string[] { "Delhi", "Punjab", "Assam", "Bihar" })
+            <table border="1" class="table table-bordered" style="background-color:antiquewhite;width:500px;">
+                <tbody>
+                    <tr>
+                        <td>
+                            @Html.Label("User Name ")
+                        </td>
+                        <td>
+                            @Html.TextBox("txtUserName", "", new { @class = "form-control" })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            @Html.Label("Password", "Password")
+                        </td>
+                        <td>
+                            @Html.Password("Password", "", new { @class = "form-control" })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Gender:
+                        </td>
+                        <td>
+                            @Html.RadioButton("Gender", "Male", true, new { id = "male" }) Male
+                            @Html.RadioButton("Gender", "Female", false, new { id = "female" }) Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Address:
+                        </td>
+                        <td>
+                            @Html.TextArea("Address", " ", new { @class = "form-control", id = "IdAddress" })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Hobbies :
+                        </td>
+                        <td>
+                            @Html.CheckBox("Cricket", true) Cricket
+                            @Html.CheckBox("Dancing") Dancing
+                            @Html.CheckBox("Drawing") Drawing
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Cources:
+                            @{
+                                IEnumerable<string> strList = new List<string> { "BCA", "BCS", "MCA", "MCS" };
+                            }
+                        </td>
+                        <td>
+                            @Html.DropDownList("ddlCourse", new SelectList(strList, strList.FirstOrDefault()), "--Select Course----")
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Skills</td>
+                        <td>
+                            @Html.ListBox("Select Skills", new List<SelectListItem> {
+                           new SelectListItem{Text= "C#",Value="1"},
+                           new SelectListItem{ Text="ASP.NET",Value="2" },
+                           new SelectListItem{ Text="ASP.NET Core",Value="3" },
+                           new SelectListItem{ Text="Azure",Value="4" }
+                            })
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <input type="submit" class="btn-primary" value="Submit" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+
     </div>
 </body>
 </html>
