@@ -31,7 +31,29 @@
                 </tr>
             </tbody>
         </table>
-
+        <hr />
+        @* RAZOR VIEW ENGINE START HERE *@
+        <div>
+            @DateTime.Now;
+        </div>
+        <hr />
+        <div>
+            @{
+                var a = 1;
+                var b = 2;
+                var ab = a + b;
+                var currentTime = DateTime.Now;
+                var tomorrowTime = DateTime.Now.AddDays(1);
+                var colorList = new List<string>() { "Red", "Blue", "White", "Green", "Black" };
+            }
+            
+        </div>
+        <div>
+            <label>Result :@ab</label><br />
+            <label>Current Time :@currentTime</label><br />
+            <label>Tomorrow Time :@tomorrowTime</label><br />
+            <label>List :@colorList.FirstOrDefault()</label>
+        </div>
     </div>
 </body>
 </html>
