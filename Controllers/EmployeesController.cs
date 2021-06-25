@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebApp_MVC_AllTopics_with_WebGentle.Models;
 
 namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
 {
@@ -11,12 +12,34 @@ namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
         // GET: Employees
         public ActionResult Index()
         {
-            return View();
+            var data = getEmployee();
+            return View(data);
         }
         public ActionResult AboutUs()
         {
             return View();
         }
+
+        private Employee getEmployee()
+        {
+            return new Employee()
+            {
+                Id = 10,
+                EmployeeName = "musab",
+                Address = "9/G"
+            };
+        }
+
+
+
+
+
+
+
+
+
+
+
 
         // GET: Employees/Details/5
         public ActionResult Details(int id)

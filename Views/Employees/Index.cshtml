@@ -1,4 +1,5 @@
-﻿
+﻿@model WebApp_MVC_AllTopics_with_WebGentle.Models.Employee
+
 <!DOCTYPE html>
 
 <html>
@@ -13,6 +14,24 @@
             <a href="/practice/AboutUs">Practice About Us</a> <br />
             <a href="/practice/Index">Practice Index</a>
         </div>
+        <hr />
+        <table>
+            <tbody>
+                <tr>
+                    <td>ID:</td>
+                    <td>@Model.Id</td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td>@Model.EmployeeName</td>
+                </tr>
+                <tr>
+                    <td>Address :</td>
+                    <td>@Model.Address</td>
+                </tr>
+            </tbody>
+        </table>
+
     </div>
 </body>
 </html>
