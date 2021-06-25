@@ -12,23 +12,19 @@ namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
         // GET: Employees
         public ActionResult Index()
         {
-            var data = getEmployee();
-            return View(data);
+           
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Index(Employee emp)
+        {
+            return View();
         }
         public ActionResult AboutUs()
         {
             return View();
         }
 
-        private Employee getEmployee()
-        {
-            return new Employee()
-            {
-                Id = 10,
-                EmployeeName = "musab",
-                Address = "9/G"
-            };
-        }
 
 
 

@@ -15,102 +15,98 @@
             <a href="/practice/Index">Practice Index</a>
         </div>
         <hr />
-        <h1>List of Standard HTML Helpers In ASP.NET MVC 5</h1>
-        @* @Html.TextBox()*@
-        @*@Html.Password*@
-        @*@Html.TextArea*@
-        @*@Html.CheckBox*@
-        @*@Html.RadioButton*@
-        @*@Html.DropDownList*@
-        @*@Html.ListBox*@
-        @*@Html.Hidden*@
-        @*@Html.Display*@
-        @*@Html.Editor*@
-        @*@Html.ActionLink*@
-        @*@Html.BeginForm*@
-        @*@Html.Label*@
-        <div>
-            <table border="1" class="table table-bordered" style="background-color:antiquewhite;width:500px;">
-                <tbody>
-                    <tr>
-                        <td>
-                            @Html.Label("User Name ")
-                        </td>
-                        <td>
-                            @Html.TextBox("txtUserName", "", new { @class = "form-control" })
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            @Html.Label("Password", "Password")
-                        </td>
-                        <td>
-                            @Html.Password("Password", "", new { @class = "form-control" })
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Gender:
-                        </td>
-                        <td>
-                            @Html.RadioButton("Gender", "Male", true, new { id = "male" }) Male
-                            @Html.RadioButton("Gender", "Female", false, new { id = "female" }) Female
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Address:
-                        </td>
-                        <td>
-                            @Html.TextArea("Address", " ", new { @class = "form-control", id = "IdAddress" })
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Hobbies :
-                        </td>
-                        <td>
-                            @Html.CheckBox("Cricket", true) Cricket
-                            @Html.CheckBox("Dancing") Dancing
-                            @Html.CheckBox("Drawing") Drawing
+        <h1>List of Strongly Type HTML Helpers </h1>
+        @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+        {
+        <table border="1" class="table table-bordered" style="background-color:antiquewhite;width:500px;">
+            <tr>
+                <td>
+                    @*@Html.HiddenFor*@
+                    @Html.HiddenFor(model => model.EmpId)
+                    @*@Html.LabelFor*@
+                    @Html.LabelFor(model => model.Name, new { @class = "label-control" })
+                </td>
+                <td>
+                    @*@Html.TextBoxFor*@
+                    @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @*@Html.LabelFor*@
+                    @Html.LabelFor(model => model.city, new { @class = "label-control" })
+                </td>
+                <td>
+                    @*@Html.DropDownListFor*@
+                    @Html.DropDownListFor(model => model.city, new SelectList(Enum.GetValues(typeof(city))), "Select City", new { @class = "form-control" })
+                </td>
 
-                        </td>
-                    </tr>
+            </tr>
+            <tr>
+                <td>
+                    @*@Html.LabelFor*@
+                    @Html.LabelFor(model => model.AgreeTerm, new { @class = "label-control" })
+                </td>
+                <td>
+                    @*@Html.CheckBoxFor*@
+                    @Html.CheckBoxFor(model => model.AgreeTerm)
+                </td>
 
-                    <tr>
-                        <td>
-                            Cources:
-                            @{
-                                IEnumerable<string> strList = new List<string> { "BCA", "BCS", "MCA", "MCS" };
-                            }
-                        </td>
-                        <td>
-                            @Html.DropDownList("ddlCourse", new SelectList(strList, strList.FirstOrDefault()), "--Select Course----")
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Skills</td>
-                        <td>
-                            @Html.ListBox("Select Skills", new List<SelectListItem> {
-                           new SelectListItem{Text= "C#",Value="1"},
-                           new SelectListItem{ Text="ASP.NET",Value="2" },
-                           new SelectListItem{ Text="ASP.NET Core",Value="3" },
-                           new SelectListItem{ Text="Azure",Value="4" }
-                            })
-                        </td>
+            </tr>
+            <tr>
+                <td>
+                    @*@Html.LabelFor*@
+                    @Html.LabelFor(model => model.Address, new { @class = "label-control" })
+                </td>
+                <td>
+                    @*@Html.TextAreaFor*@
+                    @Html.TextAreaFor(model => model.Address, new { @class = "form-control", rows = "5" })
+                </td>
 
-                    </tr>
-                    <tr>
-                        <td>
-                        </td>
-                        <td>
-                            <input type="submit" class="btn-primary" value="Submit" />
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+            </tr>
+            <tr>
+                <td>
+                    @*@Html.LabelFor*@
+                    @Html.LabelFor(model => model.Password, new { @class = "label-control" })
+                </td>
+                <td>
+                    @*@Html.PasswordFor*@
+                    @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+                </td>
 
+            </tr>
+            <tr>
+                <td>
+                    @*@Html.LabelFor*@
+                    @Html.LabelFor(model => model.skills, new { @class = "label-control" })
+                </td>
+                <td>
+                    @*@Html.ListBoxFor*@
+                    @Html.ListBoxFor(model => model.skills, new SelectList(Enum.GetValues(typeof(skills))), new { @class = "form-control" })
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @*@Html.LabelFor*@
+                    @Html.Label("male-true", "Male")
+                    @Html.Label("female-true", "Female")
+
+                </td>
+                <td>
+                    @*@Html.RadioButtonFor*@
+                    @Html.RadioButtonFor(model => model.Gender, true, new { id = "male-true" })
+                    @Html.RadioButtonFor(model => model.Gender, false, new { id = "female-true" })
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <input type="submit" value="Submit" class="btn-primary" />
+                </td>
+            </tr>
+        </table>
+        }
     </div>
 </body>
 </html>
