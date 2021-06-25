@@ -15,92 +15,17 @@
             <a href="/practice/Index">Practice Index</a>
         </div>
         <hr />
-        <table>
-            <tbody>
-                <tr>
-                    <td>ID:</td>
-                    <td>@Model.Id</td>
-                </tr>
-                <tr>
-                    <td>Name:</td>
-                    <td>@Model.EmployeeName</td>
-                </tr>
-                <tr>
-                    <td>Address :</td>
-                    <td>@Model.Address</td>
-                </tr>
-            </tbody>
-        </table>
-        <hr />
-        @* RAZOR VIEW ENGINE START HERE *@
-        <div>
-            @DateTime.Now;
-        </div>
-        <hr />
-        <div>
-            @{
-                var a = 1;
-                var b = 2;
-                var ab = a + b;
-                var currentTime = DateTime.Now;
-                var tomorrowTime = DateTime.Now.AddDays(1);
-                var colorList = new List<string>() { "Red", "Blue", "White", "Green", "Black" };
-            }
-
-        </div>
-        <div>
-            <label>Result :@ab</label><br />
-            <label>Current Time :@currentTime</label><br />
-            <label>Tomorrow Time :@tomorrowTime</label><br />
-            <label>List :@colorList.FirstOrDefault()</label>
-        </div>
-
-        @* Loops, conditional statements & directives in Razor  *@
-        <div>
-            @{
-                int myValue = 1;
-            }
-            <div>
-                @if (myValue == 1)
+        @helper OrderedList(string[] words)
+        {
+            <ol>
+                @foreach (string word in words)
                 {
-                    <h1>I am from if Block One</h1>
+                    <li>@word</li>
                 }
-                else if (myValue == 2)
-                {
-                    <h1>I am from if Block Three</h1>
-                }
-                else if (myValue == 3)
-                {
-                    <h1>I am from if Block Three</h1>
-                }
-                else
-                {
-                    <h1>Bingo, I am from Else Part</h1>
-                }
-            </div>
-            @* Ternary Operator*@
-            <div>
-                @(myValue == 1 ? "Condition is true": "Condition is False")
-            </div>
-        </div>
-        @* For Loop*@
+            </ol>
+        }
         <div>
-            @for (int i = 1; i < 10; i++)
-            {
-                <h5>I am from for Loop</h5>
-            }
-        </div>
-        @* For Loop*@
-        <div>
-            @{ 
-                var myList = new List<int>() {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-            }
-        </div>
-        <div>
-            @foreach (var ListObj in myList)
-            {
-                <p>My Value is = @ListObj</p>
-            }
+            @OrderedList(new string[] { "Delhi", "Punjab", "Assam", "Bihar" })
         </div>
     </div>
 </body>
