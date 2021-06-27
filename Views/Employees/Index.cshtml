@@ -14,11 +14,16 @@
 </head>
 <body>
     <div>
+        <p>First Image with static method</p>
         @CustomHelper.Image("https://picsum.photos/seed/picsum/200/300", "This is Custom Image")
         <br />
         <br />
         <p>Second Image with extension method</p>
         @Html.Img("https://picsum.photos/seed/picsum/200/300", "This is Custom Image")
+        <br />
+        <br />
+        <p>Third Image without HTML tag method</p>
+        @Html.File("https://picsum.photos/seed/picsum/200/300", "This is Custom Image")
     </div>
 </body>
 </html>
