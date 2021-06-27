@@ -76,4 +76,3 @@ F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\Microsoft.Co
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\obj\Debug\WebApp-MVC-AllTopics-with-WebGentle.csproj.CopyComplete
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\obj\Debug\WebApp-MVC-AllTopics-with-WebGentle.dll
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\obj\Debug\WebApp-MVC-AllTopics-with-WebGentle.pdb
-F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\obj\Debug\WebApp-MVC-AllTopics-with-WebGentle.csproj.AssemblyReference.cache

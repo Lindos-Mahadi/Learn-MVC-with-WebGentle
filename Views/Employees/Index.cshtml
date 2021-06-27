@@ -1,4 +1,9 @@
-﻿@model WebApp_MVC_AllTopics_with_WebGentle.Models.Employee
+﻿
+@using WebApp_MVC_AllTopics_with_WebGentle.Models
+
+@{
+    Layout = null;
+}
 
 <!DOCTYPE html>
 
@@ -9,62 +14,7 @@
 </head>
 <body>
     <div>
-        <h1>I am from Employees Index</h1>
-        <div>
-            <a href="/practice/AboutUs">Practice About Us</a> <br />
-            <a href="/practice/Index">Practice Index</a>
-        </div>
-        <hr />
-        <h1>List of Strongly Type HTML Helpers </h1>
-        @using (Html.BeginForm("Index", "Home", FormMethod.Post))
-        {
-            <table border="1" class="table table-bordered" style="background-color:antiquewhite;width:500px;">
-                <tbody>
-                    <tr>
-                        <td>
-                            @Html.DisplayName("FullName")
-                        </td>
-                        <td>
-                            @Html.DisplayTextFor(n => n.FullName)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            @Html.DisplayName("EmailAddress")
-                        </td>
-                        <td>
-                            @Html.DisplayTextFor(n => n.EmailAddress)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            @Html.DisplayName("PersonalWebSite")
-                        </td>
-                        <td>
-                            @Html.DisplayTextFor(n => n.PersonalWebSite)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            @Html.DisplayName("Gender")
-                        </td>
-                        <td>
-                            @Html.DisplayTextFor(n => n.Gender)
-                        </td>
-                    </tr>
-
-                </tbody>
-            </table>
-        }
-        <br />
-        <br />
-        <br />
-        @* To Get For All Data *@
-        @Html.DisplayForModel()
-        <br />
-        <br />
-        <br />
-        
+        @CustomHelper.Image("https://picsum.photos/seed/picsum/200/300", "This is Custom Image")
     </div>
 </body>
 </html>
