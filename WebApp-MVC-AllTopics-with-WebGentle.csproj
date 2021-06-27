@@ -169,6 +169,7 @@
     <Content Include="Views\Practice\Index.cshtml" />
     <Content Include="Views\Practice\AboutUs.cshtml" />
     <Content Include="Views\Employees\AboutUs.cshtml" />
+    <Content Include="Views\Employees\EditField.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

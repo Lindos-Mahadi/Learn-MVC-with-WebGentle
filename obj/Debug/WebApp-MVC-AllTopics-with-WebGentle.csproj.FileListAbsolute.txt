@@ -1,3 +1,4 @@
+F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\obj\Debug\WebApp-MVC-AllTopics-with-WebGentle.csproj.CoreCompileInputs.cache
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\WebApp-MVC-AllTopics-with-WebGentle.dll.config
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\WebApp-MVC-AllTopics-with-WebGentle.dll
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\WebApp-MVC-AllTopics-with-WebGentle.pdb
@@ -72,8 +73,7 @@ F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\System.Web.W
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\Newtonsoft.Json.xml
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\Antlr3.Runtime.pdb
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\obj\Debug\WebApp-MVC-AllTopics-with-WebGentle.csproj.AssemblyReference.cache
-F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\obj\Debug\WebApp-MVC-AllTopics-with-WebGentle.csproj.CoreCompileInputs.cache
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\obj\Debug\WebApp-MVC-AllTopics-with-WebGentle.csproj.CopyComplete
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\obj\Debug\WebApp-MVC-AllTopics-with-WebGentle.dll
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\obj\Debug\WebApp-MVC-AllTopics-with-WebGentle.pdb
+F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\obj\Debug\WebApp-MVC-AllTopics-with-WebGentle.csproj.AssemblyReference.cache
