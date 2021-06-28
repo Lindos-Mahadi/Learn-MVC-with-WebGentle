@@ -14,16 +14,38 @@
 </head>
 <body>
     <div>
-        <p>First Image with static method</p>
-        @CustomHelper.Image("https://picsum.photos/seed/picsum/200/300", "This is Custom Image")
+        @ViewBag.MyName
         <br />
         <br />
-        <p>Second Image with extension method</p>
-        @Html.Img("https://picsum.photos/seed/picsum/200/300", "This is Custom Image")
+        <hr />
+        <ul>
+            @foreach (var item in @ViewBag.NameList)
+            {
+                <li>@item</li>
+            }
+        </ul>
         <br />
         <br />
-        <p>Third Image without HTML tag method</p>
-        @Html.File("https://picsum.photos/seed/picsum/200/300", "This is Custom Image")
+        <hr />
+        <ul>
+            @foreach (var item in @ViewBag.MyEmpList)
+            {
+                <li>Employee Id:- @item.Id, Employee Name :- @item.FullName</li>
+            }
+        </ul>
+        <br />
+        <br />
+        <hr />
+        @ViewData["MyName"]
+        <br />
+        <br />
+        <hr />
+        <ul>
+            @foreach (var item in (List<string>)ViewData["NameList"])
+            {
+                <li>@item</li>
+            }
+        </ul>
     </div>
 </body>
 </html>
