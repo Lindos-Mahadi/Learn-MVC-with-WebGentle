@@ -38,5 +38,11 @@ namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
 
             return "Form Parameters-" + firstName + ", " + lastName;
         }
+        [HttpPost]
+        public string StudentModel(Student std)
+        {
+
+            return "Form Parameters-" + std.StudentName + ", " + std.Standard;
+        }
     }
 }
