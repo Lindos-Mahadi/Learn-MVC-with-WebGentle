@@ -12,11 +12,25 @@
 </head>
 <body>
     <div>
-        <h1>Hello Index</h1>
+        <h1>Pass Data using Parameters</h1>
         @using (Html.BeginForm("StudentName", "Students"))
         {
             <input type="text" name="firstName" />
+            <br />
             <input type="text" name="lastName" />
+            <br />
+            <br />
+            <input type="submit" value="submit" />
+        }
+        <br />
+        <br />
+        <h1>Pass Data using Request</h1>
+        @using (Html.BeginForm("StudentNameRequst", "Students"))
+        {
+            <input type="text" name="firstName" />
+            <br />
+            <input type="text" name="lastName" />
+            <br />
             <br />
             <input type="submit" value="submit" />
         }

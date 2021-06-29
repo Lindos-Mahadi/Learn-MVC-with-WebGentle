@@ -21,5 +21,14 @@ namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
         {
             return "Form Parameters-" +firstName + ", "+ lastName ;
         }
+
+        [HttpPost]
+        public string StudentNameRequst()
+        {
+            string firstName = Request["firstName"];
+            string lastName = Request["lastName"];
+
+            return "Form Parameters-" + firstName + ", " + lastName;
+        }
     }
 }
