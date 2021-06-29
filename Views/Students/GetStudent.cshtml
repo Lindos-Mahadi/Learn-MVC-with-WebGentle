@@ -1,0 +1,35 @@
+﻿@model WebApp_MVC_AllTopics_with_WebGentle.Models.Student
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GetStudent</title>
+</head>
+<body>
+    <div>
+        <h4>Student</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.StudentName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.StudentName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Standard)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Standard)
+            </dd>
+    
+        </dl>
+    </div>
+</body>
+</html>
