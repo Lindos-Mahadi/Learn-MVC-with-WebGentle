@@ -13,25 +13,35 @@ namespace WebApp_MVC_AllTopics_with_WebGentle
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+
+
+
+
+            routes.MapMvcAttributeRoutes();
+
+
+
+
+
             // Custom Route Name By MySelf
-            routes.MapRoute(
-                name: "allStudents",
-                url: "students",
-                defaults: new {controller = "Students", action = "GetAllStudent" }
-            );
+            //routes.MapRoute(
+            //    name: "allStudents",
+            //    url: "students",
+            //    defaults: new {controller = "Students", action = "GetAllStudent" }
+            //);
 
-            routes.MapRoute(
-                name: "getStudent",
-                url: "students/{id}",
-                defaults: new { controller = "Students", action = "GetStudent" }
-                //constraints: new {id = @"\d+"}
-            );
+            //routes.MapRoute(
+            //    name: "getStudent",
+            //    url: "students/{id}",
+            //    defaults: new { controller = "Students", action = "GetStudent" }
+            //    //constraints: new {id = @"\d+"}
+            //);
 
-            routes.MapRoute(
-                name: "AddressStudent",
-                url: "students/{id}/StudentAddress",
-                defaults: new { controller = "Students", action = "GetStudentAddress" }
-            );
+            //routes.MapRoute(
+            //    name: "AddressStudent",
+            //    url: "students/{id}/StudentAddress",
+            //    defaults: new { controller = "Students", action = "GetStudentAddress" }
+            //);
 
 
             // Custom Route END
