@@ -11,38 +11,18 @@ namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
     public class StudentsController : Controller
     {
         // GET: Students
-        [HttpGet]
         public ActionResult Index()
         {
             return View();
         }
         [HttpPost]
-        public string StudentName(string firstName, string lastName)
+        public ActionResult StudentModel(Student std)
         {
-            return "Form Parameters-" +firstName + ", "+ lastName ;
-        }
-
-        [HttpPost]
-        public string StudentNameRequst()
-        {
-            string firstName = Request["firstName"];
-            string lastName = Request["lastName"]; 
-
-            return "Form Parameters-" + firstName + ", " + lastName;
-        }
-        [HttpPost]
-        public string StudentNameForm( FormCollection form)
-        {
-            string firstName = form["firstName"];
-            string lastName = form["lastName"]; 
-
-            return "Form Parameters-" + firstName + ", " + lastName;
-        }
-        [HttpPost]
-        public string StudentModel(Student std)
-        {
-
-            return "Form Parameters-" + std.StudentName + ", " + std.Standard;
+            if (ModelState.IsValid)
+            {
+                return View();
+            }
+            return View("Index");
         }
     }
 }

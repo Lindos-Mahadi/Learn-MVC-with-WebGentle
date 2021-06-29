@@ -13,47 +13,13 @@
 </head>
 <body>
     <div>
-        <h1>Pass Data using Parameters</h1>
-        @using (Html.BeginForm("StudentName", "Students"))
+        <h1>loosely binding Validation in MVC 5</h1>
+        @using (Html.BeginForm("StudentModel", "Students", FormMethod.Post))
         {
-            <input type="text" name="firstName" />
-            <br />
-            <input type="text" name="lastName" />
-            <br />
-            <br />
-            <input type="submit" value="submit" />
-        }
-        <br />
-        <br />
-        <h1>Pass Data using Request</h1>
-        @using (Html.BeginForm("StudentNameRequst", "Students"))
-        {
-            <input type="text" name="firstName" /><br />
-
-            <input type="text" name="lastName" />
-            <br />
-            <br />
-            <input type="submit" value="submit" />
-        }
-        <br />
-        <br />
-        <h1>Pass Data using From</h1>
-        @using (Html.BeginForm("StudentNameForm", "Students"))
-        {
-            <input type="text" name="firstName" />
-            <br />
-            <input type="text" name="lastName" />
-            <br />
-            <br />
-            <input type="submit" value="submit" />
-        }
-        <br />
-        <br />
-        <h1>Pass Data using Model</h1>
-        @using (Html.BeginForm("StudentModel", "Students"))
-        {
+            @Html.ValidationMessageFor(f => f.StudentName)
             @Html.TextBoxFor(f => f.StudentName)
             <br />
+            @Html.ValidationMessageFor(l => l.Standard)
             @Html.TextBoxFor(l => l.Standard)
             <br />
             <br />
