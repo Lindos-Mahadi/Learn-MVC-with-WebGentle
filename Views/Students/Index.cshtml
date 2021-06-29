@@ -16,10 +16,11 @@
         <h1>loosely binding Validation in MVC 5</h1>
         @using (Html.BeginForm("StudentModel", "Students", FormMethod.Post))
         {
-            @Html.ValidationMessageFor(f => f.StudentName)
+            @Html.ValidationSummary()
+            @*@Html.ValidationMessageFor(f => f.StudentName)*@ <!--strongly binding-->
             @Html.TextBoxFor(f => f.StudentName)
             <br />
-            @Html.ValidationMessageFor(l => l.Standard)
+            @*@Html.ValidationMessageFor(l => l.Standard)*@  <!--strongly binding-->
             @Html.TextBoxFor(l => l.Standard)
             <br />
             <br />
