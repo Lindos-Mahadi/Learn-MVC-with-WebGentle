@@ -20,11 +20,16 @@ namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
         }
 
         // GET: Students/Details/5
-        [Route("{id}")]
+        [Route("{id:int}")]
         public ActionResult GetStudent(int id)
         {
             var students = Students().FirstOrDefault(x => x.StudentID == id);
             return View(students);
+        }
+        [Route("{id}")]
+        public string MyString(string id)
+        {
+            return id;
         }
         [Route("{id}/address")]
         public ActionResult GetStudentAddress(int id)
