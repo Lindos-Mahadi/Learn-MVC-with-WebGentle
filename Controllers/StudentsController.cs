@@ -8,10 +8,11 @@ using WebApp_MVC_AllTopics_with_WebGentle.Models;
 
 namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
 {
+    [RoutePrefix("students")]
     public class StudentsController : Controller
     {
         // GET: Students
-        [Route("students")]
+        [Route("")]
         public ActionResult GetAllStudent()
         {
             var students = Students();
@@ -19,13 +20,13 @@ namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
         }
 
         // GET: Students/Details/5
-        [Route("students/{id}")]
+        [Route("{id}")]
         public ActionResult GetStudent(int id)
         {
             var students = Students().FirstOrDefault(x => x.StudentID == id);
             return View(students);
         }
-        [Route("students/{id}/address")]
+        [Route("{id}/address")]
         public ActionResult GetStudentAddress(int id)
         {
             var studentAddress = Students().Where(x => x.StudentID == id).Select(x => x.StudentAddress).FirstOrDefault();
