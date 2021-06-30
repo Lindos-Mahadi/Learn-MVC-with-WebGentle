@@ -4,21 +4,21 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<div>
+    <h1>loosely binding Validation in MVC 5</h1>
+    @using (Html.BeginForm("StudentModel", "Students", FormMethod.Post))
+    {
+        @Html.ValidationSummary()
+        @Html.TextBoxFor(f => f.StudentName)
+        <br />
+        <br />
+        @Html.TextBoxFor(l => l.Standard)
+        <br />
+        <br />
+        <input type="submit" value="submit" />
+    }
+</div>
 
-    <div>
-        <h1>loosely binding Validation in MVC 5</h1>
-        @using (Html.BeginForm("StudentModel", "Students", FormMethod.Post))
-        {
-            @Html.ValidationSummary()
-            @*@Html.ValidationMessageFor(f => f.StudentName)*@ <!--strongly binding-->
-            @Html.TextBoxFor(f => f.StudentName)
-            <br />
-            <br />
-            @*@Html.ValidationMessageFor(l => l.Standard)*@ <!--strongly binding-->
-            @Html.TextBoxFor(l => l.Standard)
-            <br />
-            <br />
-            <input type="submit" value="submit" />
-        }
-    </div>
 
+@* RenderPage View In Pertial View *@
+@RenderPage("~/Views/Students/StudentModel.cshtml")
