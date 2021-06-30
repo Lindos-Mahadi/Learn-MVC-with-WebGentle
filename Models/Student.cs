@@ -10,6 +10,8 @@ namespace WebApp_MVC_AllTopics_with_WebGentle.Models
     {
         public int StudentID { get; set; }
         [Required(ErrorMessage ="Please enter Name")]
+        [CustomValidations(ErrorMessage = "write something")]
+        //[CustomValidations]
         public string StudentName { get; set; }
         [Required(ErrorMessage = "Please enter Standard Name")]
         public string Standard { get; set; }
