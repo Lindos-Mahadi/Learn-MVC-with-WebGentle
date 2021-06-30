@@ -168,6 +168,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Students\StudentModel.cshtml" />
     <Content Include="Views\Students\Index.cshtml" />
+    <Content Include="Views\Shared\_MultiLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
