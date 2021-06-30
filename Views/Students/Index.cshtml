@@ -1,17 +1,10 @@
 ﻿@model WebApp_MVC_AllTopics_with_WebGentle.Models.Student
 
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
     <div>
         <h1>loosely binding Validation in MVC 5</h1>
         @using (Html.BeginForm("StudentModel", "Students", FormMethod.Post))
@@ -28,5 +21,4 @@
             <input type="submit" value="submit" />
         }
     </div>
-</body>
-</html>
+
