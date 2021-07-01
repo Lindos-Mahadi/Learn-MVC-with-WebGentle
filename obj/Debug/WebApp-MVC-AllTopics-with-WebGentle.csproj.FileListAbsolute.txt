@@ -84,3 +84,5 @@ F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\MyApp.Db.pdb
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\MyApp.Db.dll.config
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\EntityFramework.xml
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\EntityFramework.SqlServer.xml
+F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\MyModels.dll
+F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\MyModels.pdb

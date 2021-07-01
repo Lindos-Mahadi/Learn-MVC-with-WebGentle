@@ -167,9 +167,8 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Create.cshtml" />
+    <Content Include="Views\Home\CreateEmployee.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -192,6 +191,10 @@
     <ProjectReference Include="..\MyApp.Db\MyApp.Db.csproj">
       <Project>{fc536a77-5b5c-492b-8568-222170acb5db}</Project>
       <Name>MyApp.Db</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyModels\MyModels.csproj">
+      <Project>{cd002c7a-6514-40e7-a5bb-4e27fff4d4d3}</Project>
+      <Name>MyModels</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
