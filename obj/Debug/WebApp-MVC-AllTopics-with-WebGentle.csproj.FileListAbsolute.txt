@@ -77,3 +77,10 @@ F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\obj\Debug\WebApp
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\obj\Debug\WebApp-MVC-AllTopics-with-WebGentle.dll
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\obj\Debug\WebApp-MVC-AllTopics-with-WebGentle.pdb
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\obj\Debug\WebApp-MVC-AllTopics-with-WebGentle.csproj.AssemblyReference.cache
+F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\EntityFramework.dll
+F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\EntityFramework.SqlServer.dll
+F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\MyApp.Db.dll
+F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\MyApp.Db.pdb
+F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\MyApp.Db.dll.config
+F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\EntityFramework.xml
+F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\EntityFramework.SqlServer.xml
