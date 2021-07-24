@@ -25,13 +25,9 @@ namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
         {
             return View();
         }
-        public ActionResult CreateEmployee()
-        {
-            return View();
-        }
 
         [HttpPost]
-        public ActionResult CreateEmployee(EmployeeModel model)
+        public ActionResult Create(EmployeeModel model)
         {
             if (ModelState.IsValid)
             {
@@ -46,7 +42,7 @@ namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
         }
 
         public ActionResult Details(int id)
-        {
+         {
             var details = repository.GetDetailsEmployee(id);
             return View(details);
         }
