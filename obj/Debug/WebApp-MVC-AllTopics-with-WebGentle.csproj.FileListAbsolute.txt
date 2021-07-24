@@ -1,3 +1,4 @@
+F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\obj\Debug\WebApp-MVC-AllTopics-with-WebGentle.csproj.AssemblyReference.cache
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\obj\Debug\WebApp-MVC-AllTopics-with-WebGentle.csproj.CoreCompileInputs.cache
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\WebApp-MVC-AllTopics-with-WebGentle.dll.config
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\WebApp-MVC-AllTopics-with-WebGentle.dll
@@ -52,8 +53,12 @@ F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\roslyn\vbc.r
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\roslyn\VBCSCompiler.exe
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\roslyn\VBCSCompiler.exe.config
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\Antlr3.Runtime.dll
+F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\EntityFramework.dll
+F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\EntityFramework.SqlServer.dll
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\Microsoft.Web.Infrastructure.dll
+F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\MyApp.Db.dll
+F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\MyModels.dll
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\Newtonsoft.Json.dll
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\System.Web.Helpers.dll
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\System.Web.Mvc.dll
@@ -63,6 +68,10 @@ F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\System.Web.W
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\System.Web.WebPages.dll
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\System.Web.WebPages.Razor.dll
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\WebGrease.dll
+F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\MyApp.Db.pdb
+F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\MyModels.pdb
+F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\EntityFramework.xml
+F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\EntityFramework.SqlServer.xml
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\System.Web.Helpers.xml
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\System.Web.Mvc.xml
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\System.Web.Optimization.xml
@@ -76,13 +85,4 @@ F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\Microsoft.Co
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\obj\Debug\WebApp-MVC-AllTopics-with-WebGentle.csproj.CopyComplete
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\obj\Debug\WebApp-MVC-AllTopics-with-WebGentle.dll
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\obj\Debug\WebApp-MVC-AllTopics-with-WebGentle.pdb
-F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\obj\Debug\WebApp-MVC-AllTopics-with-WebGentle.csproj.AssemblyReference.cache
-F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\EntityFramework.dll
-F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\EntityFramework.SqlServer.dll
-F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\MyApp.Db.dll
-F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\MyApp.Db.pdb
 F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\MyApp.Db.dll.config
-F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\EntityFramework.xml
-F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\EntityFramework.SqlServer.xml
-F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\MyModels.dll
-F:\Learn-MVC-with-WebGentle\WebApp-MVC-AllTopics-with-WebGentle\bin\MyModels.pdb

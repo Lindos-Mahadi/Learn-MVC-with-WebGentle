@@ -29,6 +29,7 @@ namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
         {
             return View();
         }
+
         [HttpPost]
         public ActionResult CreateEmployee(EmployeeModel model)
         {
