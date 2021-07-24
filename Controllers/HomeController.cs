@@ -44,5 +44,11 @@ namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
             }
             return View();
         }
+
+        public ActionResult Details(int id)
+        {
+            var details = repository.GetDetailsEmployee(id);
+            return View(details);
+        }
     }
 }
