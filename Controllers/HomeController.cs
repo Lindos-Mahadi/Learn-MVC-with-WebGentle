@@ -50,5 +50,20 @@ namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
             var details = repository.GetDetailsEmployee(id);
             return View(details);
         }
+        public ActionResult Edit(int id)
+        {
+            var details = repository.GetDetailsEmployee(id);
+            return View(details);
+        }
+        [HttpPost]
+        public ActionResult Edit(EmployeeModel model)
+        {
+            if(ModelState.IsValid)
+            {
+                repository.UpdateEmployee(model.Id, model);
+                return RedirectToAction("Index");
+            }
+            return View();
+        }
     }
 }
