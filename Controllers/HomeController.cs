@@ -65,5 +65,12 @@ namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
             }
             return View();
         }
+
+        public ActionResult Delete(int id)
+        {
+            repository.DeleteEmployee(id);
+
+            return RedirectToAction("Index");
+        }
     }
 }
