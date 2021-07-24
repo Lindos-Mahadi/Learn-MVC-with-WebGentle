@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using MyApp.Db.DbOperations;
 using MyModels.Models;
+using Newtonsoft.Json;
 
 namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
 {
@@ -20,6 +21,12 @@ namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
         {
             var dataList = repository.GetAllEmployees();
             return View(dataList);
+        }
+        // Show ALL Data using JSON 
+        public ActionResult getEmployee()
+        {
+            var dataList = JsonConvert.SerializeObject(repository.GetAllEmployees());
+            return Json(dataList, JsonRequestBehavior.AllowGet);
         }
         public ActionResult Create()
         {
@@ -37,6 +44,7 @@ namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
                     ModelState.Clear();
                     ViewBag.IsSuccess = "Data Added";
                 }
+                return RedirectToAction("Index");
             }
             return View();
         }
