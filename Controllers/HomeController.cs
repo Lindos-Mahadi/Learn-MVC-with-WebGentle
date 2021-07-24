@@ -18,7 +18,7 @@ namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
         }
         public ActionResult Index()
         {
-            var dataList = repository.ToString();
+            var dataList = repository.GetAllEmployees();
             return View(dataList);
         }
         public ActionResult Create()
