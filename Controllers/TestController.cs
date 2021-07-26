@@ -18,11 +18,9 @@ namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
         [HttpPost]
         public JsonResult Index(EmployeeModel model)
         {
-            //return View();
             string message = "SUCCESS";
             return Json(new { Message = message,  JsonRequestBehavior.AllowGet });
         }
-
         public JsonResult About()
         {
             List<string> countries = new List<string>()
@@ -70,6 +68,11 @@ namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
             };
             var json = JsonConvert.SerializeObject(countries);
             return Json(json, JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult PartialLoop()
+        {
+            return View();
         }
     }
 }

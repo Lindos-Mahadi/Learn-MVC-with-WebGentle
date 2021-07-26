@@ -307,6 +307,8 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery.min.map" />
     <Content Include="Scripts\jquery.slim.min.map" />
+    <Content Include="Views\Test\PartialLoop.cshtml" />
+    <Content Include="Views\Shared\_Card.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyApp.Db\MyApp.Db.csproj">
