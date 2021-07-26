@@ -8,25 +8,57 @@
     <img src="~/Content/Infinity-1s-200px.gif" height="100" width="200" />
 </div>
 
-@using (Ajax.BeginForm("Index", "Test", new AjaxOptions 
+@using (Ajax.BeginForm("Index", "Test", new AjaxOptions
 {
-    OnSuccess = "fnSuccess", 
-    OnFailure = "fnFailure", 
+    OnSuccess = "fnSuccess",
+    OnFailure = "fnFailure",
     HttpMethod = "POST",
     LoadingElementId = "loder"
 }))
+
 {
     <br />
     <br />
-    <div>
-        @*@Html.EditorFor(x => x.Id)<br /><br />*@
-        @Html.EditorFor(x => x.FirstName)<br /><br />
-        @Html.EditorFor(x => x.LastName)<br /><br />
-        @Html.EditorFor(x => x.Email)<br /><br />
-        @Html.EditorFor(x => x.Code)<br /><br />
+    <section>
+        <div class="row">
+            <div class="col-md-6">
+                @*@Html.EditorFor(x => x.Id)<br /><br />*@
+                @Html.EditorFor(x => x.FirstName)<br /><br />
+                @Html.EditorFor(x => x.LastName)<br /><br />
+                @Html.EditorFor(x => x.Email)<br /><br />
+                @Html.EditorFor(x => x.Code)<br /><br />
 
-        <input type="submit" value="Click Me" />
-    </div>
+                <input type="submit" value="Click Me" />
+            </div>
+            <div class="col-md-6">
+                @Html.ActionLink("Go To Home", // <-- Link text
+                 "Index", // <-- Action Method Name
+                 "Home", // <-- Controller Name
+                 null, // <-- Route value
+                 null // <-- htmlArguments
+                 )
+                <br />
+                    @*Ajax Second System of ActionLink*@
+
+            @Ajax.ActionLink("About", "About", "Test", new AjaxOptions()
+            {
+               InsertionMode = InsertionMode.Replace,
+               UpdateTargetId = "ListContainer" ,
+               LoadingElementId = "loder"
+            })
+                <br />
+            @Ajax.ActionLink("Learn", "Learn", "Test", new AjaxOptions()
+            {
+               InsertionMode = InsertionMode.Replace,
+               UpdateTargetId = "ListContainer",
+               LoadingElementId = "loder"
+            })
+            </div>
+            <div id="ListContainer">
+
+            </div>
+        </div>
+    </section>
 }
 
 <script>
