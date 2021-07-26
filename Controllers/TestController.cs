@@ -1,4 +1,5 @@
-﻿using MyModels.Models;
+﻿using MyApp.Db.DbOperations;
+using MyModels.Models;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,12 @@ namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
 {
     public class TestController : Controller
     {
+        EmployeeRepository repository = null;
+
+        public TestController()
+        {
+            repository = new EmployeeRepository();
+        }
         // GET: Test
         public ActionResult Index()
         {
@@ -73,6 +80,12 @@ namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
         public ActionResult PartialLoop()
         {
             return View();
+        }
+
+        public ActionResult PartialViewDinamic()
+        {
+            var dataList = repository.GetAllEmployees();
+            return View(dataList);
         }
     }
 }

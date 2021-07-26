@@ -309,6 +309,8 @@
     <Content Include="Scripts\jquery.slim.min.map" />
     <Content Include="Views\Test\PartialLoop.cshtml" />
     <Content Include="Views\Shared\_Card.cshtml" />
+    <Content Include="Views\Shared\_Dynamic.cshtml" />
+    <Content Include="Views\Test\PartialViewDinamic.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyApp.Db\MyApp.Db.csproj">

@@ -1,0 +1,18 @@
+﻿@model IEnumerable<MyModels.Models.EmployeeModel>
+
+@{
+    ViewBag.Title = "PartialViewDinamic";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>PartialViewDinamic</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+
+@foreach (var item in Model) {
+    @Html.Partial("_Dynamic", item)
+}
+
