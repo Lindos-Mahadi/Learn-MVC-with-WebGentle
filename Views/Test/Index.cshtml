@@ -1,0 +1,40 @@
+﻿@model MyModels.Models.EmployeeModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@using (Ajax.BeginForm("Index", "Test", new AjaxOptions 
+{
+    OnSuccess = "fnSuccess", 
+    OnFailure = "fnFailure", 
+    HttpMethod = "POST" 
+}))
+{
+    <br />
+    <br />
+    <div>
+        @*@Html.EditorFor(x => x.Id)<br /><br />*@
+        @Html.EditorFor(x => x.FirstName)<br /><br />
+        @Html.EditorFor(x => x.LastName)<br /><br />
+        @Html.EditorFor(x => x.Email)<br /><br />
+        @Html.EditorFor(x => x.Code)<br /><br />
+
+        <input type="submit" value="Click Me" />
+    </div>
+}
+
+<script>
+
+    function fnSuccess(data) {
+        console.log(data);
+        alert("Hello from Success");
+    }
+
+    function fnFailure(err) {
+        console.error(err);
+        alert("Hello from Success");
+    }
+</script>
+
+
