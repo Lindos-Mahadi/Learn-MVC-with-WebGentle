@@ -4,11 +4,16 @@
     ViewBag.Title = "Index";
 }
 
+<div style="display:none" id="loder">
+    <img src="~/Content/Infinity-1s-200px.gif" height="100" width="200" />
+</div>
+
 @using (Ajax.BeginForm("Index", "Test", new AjaxOptions 
 {
     OnSuccess = "fnSuccess", 
     OnFailure = "fnFailure", 
-    HttpMethod = "POST" 
+    HttpMethod = "POST",
+    LoadingElementId = "loder"
 }))
 {
     <br />
