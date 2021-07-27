@@ -20,5 +20,17 @@ namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
         {
             return View();
         }
+
+        public ActionResult ErrorHandeler()
+        {
+            try
+            {
+                throw new Exception("This is an Exception");
+            }
+            catch (Exception)
+            {
+                return RedirectToAction("PartialViewDinamic", "Test");
+            }
+        }
     }
 }
