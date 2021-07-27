@@ -128,6 +128,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\FiltersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
@@ -311,6 +312,7 @@
     <Content Include="Views\Shared\_Card.cshtml" />
     <Content Include="Views\Shared\_Dynamic.cshtml" />
     <Content Include="Views\Test\PartialViewDinamic.cshtml" />
+    <Content Include="Views\Filters\GetDate.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyApp.Db\MyApp.Db.csproj">
