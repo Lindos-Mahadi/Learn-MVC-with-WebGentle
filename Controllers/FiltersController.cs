@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
 {
+    [HandleError]
     public class FiltersController : Controller
     {
         // GET: Filters
@@ -21,7 +22,7 @@ namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
             return View();
         }
 
-        [HandleError]
+        //[HandleError]
         public ActionResult ErrorHandeler()
         {
             throw new Exception("This is an Exception");
