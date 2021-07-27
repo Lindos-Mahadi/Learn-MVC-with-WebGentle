@@ -13,7 +13,7 @@ namespace WebApp_MVC_AllTopics_with_WebGentle
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
-            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters); // Global Error Handle er jono ei FilterConfig ta thakte e hobe
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }

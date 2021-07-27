@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
 {
-    [HandleError]
+    //[HandleError]
     public class FiltersController : Controller
     {
         // GET: Filters
