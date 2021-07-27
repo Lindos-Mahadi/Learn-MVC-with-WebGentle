@@ -15,7 +15,7 @@ namespace WebApp_MVC_AllTopics_with_WebGentle.Controllers
         }
 
         // OUTPUT CACH FILER
-        [OutputCache(Duration = 20)] // duration always works in second
+        [OutputCache(Duration = 20, Location = System.Web.UI.OutputCacheLocation.Client)] // 6 outputCach location
         public ActionResult GetDate()
         {
             return View();
